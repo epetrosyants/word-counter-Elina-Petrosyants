@@ -19,7 +19,8 @@ let changeColor = () => {
 };
 colorBtn.addEventListener("click", changeColor);
 
-//Impletementing Smooth Scrolling
+// Implementing Smooth Scrolling
+
 document.querySelector(".nav-links").addEventListener("click", function (e) {
   console.log(e.target);
   e.preventDefault();
@@ -51,12 +52,12 @@ const countChars = function (str) {
 
 const myForm = document.getElementById("myForm");
 myForm.addEventListener("submit", function (e) {
-  e.preventDefault(); // prevents the form from autosubmitting
+  e.preventDefault(); // prevents the form from auto submitting
   // console.log("submitted");
-  const textinput = document.getElementById("letters").value;
-  // console.log(textinput);
-  // console.log(countChars(textinput));
-  alert(countChars(textinput));
+  const textInput = document.getElementById("letters").value;
+  // console.log(textInput);f
+  // console.log(countChars(textInput));
+  alert(countChars(textInput));
 });
 
 //section2
@@ -102,7 +103,7 @@ button.addEventListener("click", (e) => {
 //Implementing text limit.
 const myTextS3 = document.getElementById("myText");
 const limitNumOfLetters = document.getElementById("limitNumOfLetters");
-const limitofLetters = 200;
+const limitToFLetters = 200;
 limitNumOfLetters.textContent = 0 + "/" + limit;
 
 myTextS3.addEventListener("input", function () {
