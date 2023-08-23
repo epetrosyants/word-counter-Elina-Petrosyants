@@ -4,216 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
-      rel="stylesheet"
-    />
     <link href="style.css" rel="stylesheet" />
     <title>Word Counter</title>
   </head>
 
   <body>
-    <header class="header">
-      <nav class="nav">
-        <img class="nav-logo" src="img/img19.png" alt="Word Counter logo" />
-        <ul class="nav-links">
-          <li class="nav-item">
-            <a class="nav-link" href="#section-1">Number Of Letters</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section-2">Words</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section-3">Sentences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section-4">Other Metrics</a>
-          </li>
-        </ul>
-        <button class="btn">Change Background!</button>
-      </nav>
-      <div class="header-title">
-        <h1 class="header-text">
-          When You <span class="highlight"> Meet</span> Word <br />
-          <span class="highlight">Counter!</span>
-        </h1>
-        <h4>
-          Do You need to count the number of characters, letters, words and
-          sentences? Then you are in the right place!
-        </h4>
-      </div>
-    </header>
+ <nav class="nav">
+    <img class="logo" src="img/img19.png" alt="Word Counter logo" />
+    </br>
+    <button class="btn">Change Background!</button>
+</nav>
 
-    <section class="section" id="#section-1">
-      <div class="section-title">
-        <h2 class="section-description">Number of letters</h2>
-        <h3 class="section-header">Count the number of letters.</h3>
-      </div>
+<form class="formBox">
+ <h1 class="formBoxHeader">Word counter. Consider it solved!</h1>
+  <textarea
+  id="myText1"
+  class="textArea"
+  rows="5"
+  placeholder="Type something here."
+  ></textarea>
+  <p class="textLimit">0/200</p>
+  <button class="resetBtn"> Reset</button>
+</form>
 
-      <form id="myForm" class="form">
-        <span class="bg-animate"></span>
-        <div class="form-box">
-          <label class="numOfLettersLabel" for="letters"> Letters </label>
-          <input
-            class="numOfLettersInput"
-            type="text"
-            id="letters"
-            name="letters"
-            placeholder="text"
-            required
-          />
-        </div>
-        <br />
-        <div class="inputButtons">
-          <button class="numOfLettersInput" id="textbox">Reset</button>
-        </div>
-        <div>
-          <button type="submit" id="myBtn" class="btn-text">Save</button>
-        </div>
-      </form>
-    </section>
-
-    <section class="section" id="#section-2">
-      <div class="section-title">
-        <h2 class="section-description">Number Of Words</h2>
-        <h3 class="section-header">Count The Number of Words.</h3>
-      </div>
-
-      <div class="form-box2">
-        <textarea
-          id="my-text"
-          class="textarea"
-          rows="5"
-          placeholder="Type something here."
-        ></textarea>
-        <p id="result" class="result1">0/200</p>
-        <div>
-          <button id="btn" class="btnSection2">Count Words</button>
-          <strong id="wordsCount" class="countResult">Word Count:</strong>
-          <span id="words" class="countNumber"></span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="#section-3">
-      <div class="section-title">
-        <h2 class="section-description">Number Of Sentences</h2>
-        <h3 class="section-header">Count The number of Sentences.</h3>
-      </div>
-
-      <div class="form-box2">
-        <textarea
-          id="myText"
-          class="textarea"
-          rows="5"
-          placeholder="Type something here."
-        ></textarea>
-        <p id="limitNumOfLetters" class="result1">0/200</p>
-        <div>
-          <button id="btnS3" class="btnSection3">Count Sentences</button>
-          <strong id="sentencesCount" class="countResult"
-            >Sentences Count:</strong
-          >
-          <span id="sentences" class="countNumber"></span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="#section-4">
-      <div class="section-title">
-        <h2 class="section-description">Other Metric</h2>
-        <h3 class="section-header">
-          Count the number of characters including white spaces.
-        </h3>
-      </div>
-
-      <div class="form-box3">
-        <textarea
-          id="myText1"
-          class="textArea"
-          rows="5"
-          placeholder="Type something here."
-        ></textarea>
-        <p id="limitOfLetters" class="result3">0/200</p>
-        <div>
-          <button id="btnS4" class="btnSection4">Count Characters</button>
-          <strong id="charactersCount" class="countOfResult"
-            >Characters Count:</strong
-          >
-          <span id="characters" class="countOfNumber"></span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--sign-up">
-      <div class="section__title">
-        <h3 class="section__header">
-          The best day to join Word Counter was one year ago. The second best is
-          today!
-        </h3>
-      </div>
-      <button id="show-modal" class="btn btn--show-modal">
-        Open your free account today!
-      </button>
-    </section>
-    <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a class="footer__link" href="#">About</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Pricing</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Careers</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Blog</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <img src="img/img19.png" alt="Logo" class="footer__logo" />
-      <p class="footer__copyright">
-        &copy; Copyright by
-        <a
-          class="footer__link twitter-link"
-          target="_blank"
-          href="https://facebook.com/Elina.Petrosyants"
-          >Elina Petrosyants</a
-        >. Use this to count letters, words and sentences.
-      </p>
-    </footer>
-
-    <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
-      <h2 class="modal__header">
-        Open your bank account <br />
-        in just <span class="highlight">5 minutes</span>
-      </h2>
-      <form class="modal__form">
-        <label>First Name</label>
-        <input type="text" />
-        <label>Last Name</label>
-        <input type="text" />
-        <label>Email Address</label>
-        <input type="email" />
-        <button class="btn">Next step &rarr;</button>
-      </form>
+  <div class="wordCounterButtons">
+    <div class="counterBtn">
+      <button class="btnSection1">Count letters</button>
+      <strong class="countOfResult">Count:</strong>
+      <span class="countOfNumber">0</span>
     </div>
-    <div class="overlay hidden"></div>
-
-    <script src="script.js"></script>
-  </body>
+    <br/>
+    
+    <div class="counterBtn">
+      <button  class="btnSection2">Count Words</button>
+      <strong  class="countOfResult">Count:</strong >
+        <span class="countOfWords">0</span>
+      </div>
+      
+      <div class="counterBtn">
+        <button  class="btnSection3">Count Sentences</button>
+        <strong  class="countOfResult">Count:</strong>
+        <span class="countOfSentences">0</span>
+    </div>
+    
+    <div class="counterBtn">
+      <button class="btnSection4">Count Numbers</button>
+      <strong class="countOfResult">Count:</strong>
+      <span class="countOfNumbers">0</span>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
 </html>
